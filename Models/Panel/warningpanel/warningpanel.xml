@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<path>warningpanel.ac</path>
+
+<animation>
+<type>material</type>
+<object-name>parkbrake</object-name>
+<condition>
+<or>
+<property>/gear/gear/has-brake</property>
+<property>/gear/gear[1]/has-brake</property>
+<property>/gear/gear[2]/has-brake</property>
+</or>
+</condition>
+<ambient>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </ambient>
+<specular>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </specular>
+<emission>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </emission>
+</animation>
+<animation>
+<type>material</type>
+<object-name>battery</object-name>
+<condition>
+<not>
+<property>controls/electric/battery-switch</property>
+</not>
+</condition>
+<ambient>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </ambient>
+<specular>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </specular>
+<emission>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </emission>
+</animation>
+
+<animation>
+<type>material</type>
+<object-name>generator1</object-name>
+<condition>
+<not>
+<property>controls/electric/engine/generator</property>
+</not>
+</condition>
+<ambient>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </ambient>
+<specular>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </specular>
+<emission>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </emission>
+</animation>
+
+<animation>
+<type>material</type>
+<object-name>generator2</object-name>
+<condition>
+<not>
+<property>controls/electric/engine[1]/generator</property>
+</not>
+</condition>
+<ambient>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </ambient>
+<specular>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </specular>
+<emission>
+<red>1</red>
+<green>0.0</green>
+<blue>0.0</blue>
+  </emission>
+</animation>
+</PropertyList>

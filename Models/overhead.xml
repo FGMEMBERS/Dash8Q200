@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>overhead.ac</path> 
+
+<animation>
+	<type>pick</type>
+	<object-name>landinglightL</object-name>
+	<object-name>landinglightR</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/lighting/landing-lights</property>
+		</binding>
+	</action>
+</animation> 
+<animation>
+	<type>rotate</type>
+	<object-name>landinglightL</object-name>
+	<object-name>landinglightR</object-name>
+			<property>controls/lighting/landing-lights</property>
+<factor>70</factor>
+<center>
+<x-m>-8.30941</x-m>
+<z-m>2.82148</z-m>
+</center>
+<axis><y>1</y></axis>
+</animation> 
+
+<animation>
+	<type>pick</type>
+	<object-name>taxilight</object-name>
+	<visible>true</visible>
+	<action>
+		<button>0</button>
+		<repeatable>true</repeatable>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/lighting/taxi-lights</property>
+		</binding>
+	</action>
+</animation> 
+<animation>
+	<type>rotate</type>
+	<object-name>taxilight</object-name>
+			<property>controls/lighting/taxi-lights</property>
+<factor>70</factor>
+<center>
+<x-m>-8.30941</x-m>
+<z-m>2.82148</z-m>
+</center>
+<axis><y>1</y></axis>
+</animation> 
+</PropertyList>

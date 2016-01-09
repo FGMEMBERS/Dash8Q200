@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<path>rpm.ac</path>
+
+<animation>
+<type>rotate</type>
+<object-name>indicatorL</object-name>
+<property>/engines/engine[0]/rpm</property>
+      <interpolation> 
+        <entry>
+          <ind>0</ind>
+          <dep>0</dep>
+        </entry>
+       <!-- <entry>
+          <ind>80</ind>
+          <dep>-28.824</dep>
+        </entry>
+		<entry>
+          <ind>100</ind>
+          <dep>-58.512</dep>
+        </entry>
+		<entry>
+          <ind>120</ind>
+          <dep>-89.303</dep>
+        </entry>
+		<entry>
+          <ind>140</ind>
+          <dep>-119.24</dep>
+        </entry>
+		<entry>
+          <ind>160</ind>
+          <dep>-149.901</dep>
+        </entry>
+		<entry>
+          <ind>180</ind>
+          <dep>-171.151</dep>
+        </entry>
+		<entry>
+          <ind>200</ind>
+          <dep>-188.15</dep>
+        </entry>
+		<entry>
+          <ind>300</ind>
+          <dep>-255.697</dep>
+        </entry>-->
+		<entry>
+          <ind>750</ind>
+          <dep>-220.47</dep>
+        </entry>
+      </interpolation>
+<center>
+<x-m>0.0</x-m>
+<y-m>-0.10195</y-m>
+<z-m>0.0033</z-m>
+  </center>
+<axis><x>1</x></axis>
+</animation>
+<animation>
+<type>rotate</type>
+<object-name>indicatorR</object-name>
+<property>/engines/engine[1]/rpm</property>
+      <interpolation> 
+        <entry>
+          <ind>0</ind>
+          <dep>0</dep>
+        </entry>
+       <!-- <entry>
+          <ind>80</ind>
+          <dep>-28.824</dep>
+        </entry>
+		<entry>
+          <ind>100</ind>
+          <dep>-58.512</dep>
+        </entry>
+		<entry>
+          <ind>120</ind>
+          <dep>-89.303</dep>
+        </entry>
+		<entry>
+          <ind>140</ind>
+          <dep>-119.24</dep>
+        </entry>
+		<entry>
+          <ind>160</ind>
+          <dep>-149.901</dep>
+        </entry>
+		<entry>
+          <ind>180</ind>
+          <dep>-171.151</dep>
+
+        </entry>
+		<entry>
+          <ind>200</ind>
+          <dep>-188.15</dep>
+
+        </entry>
+		<entry>
+          <ind>300</ind>
+          <dep>-255.697</dep>
+
+        </entry>-->
+		<entry>
+          <ind>750</ind>
+          <dep>-220.47</dep>
+        </entry>
+      </interpolation>
+<center>
+<x-m>0.0</x-m>
+<y-m>0.10195</y-m>
+<z-m>0.0033</z-m>
+  </center>
+<axis><x>1</x></axis>
+</animation>
+</PropertyList>

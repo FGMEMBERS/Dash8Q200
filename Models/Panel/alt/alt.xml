@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<path>alt.ac</path>
+
+<animation>
+<type>rotate</type>
+<object-name>indicator</object-name>
+<property>/position/altitude-ft</property>
+<factor>-0.36</factor>
+<center>
+<x-m>0.0</x-m>
+<y-m>0.0</y-m>
+<z-m>0.0</z-m>
+  </center>
+<axis><x>1</x></axis>
+</animation>
+<animation>
+<type>rotate</type>
+<object-name>indicator-1000</object-name>
+<property>/position/altitude-ft</property>
+<factor>-0.036</factor>
+<center>
+<x-m>0.0</x-m>
+<y-m>0.0</y-m>
+<z-m>0.0</z-m>
+  </center>
+<axis><x>1</x></axis>
+</animation>
+
+</PropertyList>

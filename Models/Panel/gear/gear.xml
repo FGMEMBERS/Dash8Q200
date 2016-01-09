@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<path>gear.ac</path>
+<animation>
+        <type>pick</type>
+        <object-name>gearhandle</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.5</interval-sec>
+            <binding>
+            <command>property-toggle</command>
+            <property>controls/gear/gear-down</property>
+            </binding>
+        </action>
+    </animation>
+<animation>
+<type>rotate</type>
+        <object-name>gearhandle</object-name>
+<property>controls/gear/gear-down</property>
+
+      <interpolation> 
+        <entry>
+          <ind>1</ind>
+          <dep>0</dep>
+        </entry>
+		<entry>
+          <ind>0</ind>
+          <dep>-90</dep>
+        </entry>
+      </interpolation>
+  <center>
+   <x-m>0.0058</x-m>
+   <z-m>-0.0145</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1</y>
+   <z>0.0</z>
+  </axis>
+</animation>
+
+
+</PropertyList>

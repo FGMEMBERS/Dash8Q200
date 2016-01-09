@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<path>ai.ac</path>
+<animation>
+  <type>textranslate</type>
+<object-name>ai</object-name>
+<property>/orientation/pitch-deg</property>
+  <bias>0.0001</bias>
+  <factor>0.00245</factor>
+<axis><y>1</y></axis>
+</animation>
+
+<animation>
+<type>rotate</type>
+<object-name>ai</object-name>
+<property>/orientation/roll-deg</property>
+  <factor>-1</factor>
+<center>
+<x-m>-0.0054</x-m>
+<y-m>-0.30502</y-m>
+<z-m>0.02393</z-m>
+  </center>
+<axis><x>-1</x></axis>
+</animation>
+
+</PropertyList>

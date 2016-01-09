@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+DHC8Q200 by D-ECHO June 2015
+************************************************************************
+-->
+
+<PropertyList>
+    <sim>
+
+    <model>
+        <start-idling type="bool">1</start-idling>
+        <variant type="int">1</variant>
+    </model>
+
+
+    <view n="0">
+        <internal archive="y">true</internal>
+        <name>Cockpit</name>
+        <type>lookfrom</type>
+        <internal type="bool">true</internal>
+        <config>
+            <default-field-of-view-deg>90</default-field-of-view-deg>
+            <x-offset-m type="double">-0.4</x-offset-m>
+            <y-offset-m type="double">1.61</y-offset-m>
+            <z-offset-m type="double">-7.6975</z-offset-m>
+            <pitch-offset-deg>-14</pitch-offset-deg>
+        </config>
+    </view>
+  <view n="101">
+    <name>Cabin View</name>
+    <type>lookfrom</type>
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.5</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">80.0</default-field-of-view-deg>
+      <default-pitch-deg type="double">0</default-pitch-deg>
+      <default-heading-deg type="double">0</default-heading-deg>
+      <front-direction-deg type="double">0</front-direction-deg>
+      <front-left-direction-deg type="double">45</front-left-direction-deg>
+      <left-direction-deg type="double">90</left-direction-deg>
+      <back-left-direction-deg type="double">135</back-left-direction-deg>
+      <back-direction-deg type="double">180</back-direction-deg>
+      <back-right-direction-deg type="double">225</back-right-direction-deg>
+      <right-direction-deg type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">315</front-right-direction-deg>
+        <x-offset-m type="double">-0.4</x-offset-m>
+        <y-offset-m type="double">1.4</y-offset-m>
+        <z-offset-m type="double">-3.1195</z-offset-m>
+        <pitch-offset-deg>0</pitch-offset-deg>
+    </config>
+    <dynamic>
+      <enabled type="bool" userarchive="y">false</enabled>
+    </dynamic>
+  </view>
+
+<view n="102">
+ <name>Stewardess 360 View</name>
+    <type>lookfrom</type>
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">80.0</default-field-of-view-deg>
+      <default-pitch-deg type="double">0</default-pitch-deg>
+      <default-heading-deg type="double">180</default-heading-deg>
+      <front-direction-deg type="double">180</front-direction-deg>
+      <front-left-direction-deg type="double">135</front-left-direction-deg>
+      <left-direction-deg type="double">90</left-direction-deg>
+      <back-left-direction-deg type="double">45</back-left-direction-deg>
+      <back-direction-deg type="double">0</back-direction-deg>
+      <back-right-direction-deg type="double">315</back-right-direction-deg>
+      <right-direction-deg type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">225</front-right-direction-deg>>
+        <x-offset-m type="double">0.0</x-offset-m>
+        <y-offset-m type="double">1.9</y-offset-m>
+        <z-offset-m type="double">-3.1195</z-offset-m>
+        <pitch-offset-deg>0</pitch-offset-deg>
+    </config>
+    <dynamic>
+      <enabled type="bool" userarchive="y">false</enabled>
+    </dynamic>
+  </view>
+<view n="1">
+  <config>
+   <target-y-offset-m archive="y" type="double">2</target-y-offset-m>
+  </config>
+ </view>
+
+ <view n="2">
+  <config>
+   <target-y-offset-m archive="y" type="double">2</target-y-offset-m>
+  </config>
+ </view>
+
+ <view n="3">
+  <config>
+   <target-y-offset-m archive="y" type="double">2</target-y-offset-m>
+  </config>
+ </view>
+
+ <view n="4">
+  <config>
+   <target-y-offset-m archive="y" type="double">2</target-y-offset-m>
+  </config>
+ </view>
+
+    <current-view>
+        <config>
+            <default-field-of-view-deg>120</default-field-of-view-deg>
+        </config>
+    </current-view>
+
+        <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                         <!-- 0 immat -->
+        <int   n="1"  type="int">  0 </int>                                         <!-- 1 immat -->
+        <int   n="2"  type="int">  0 </int>                                         <!-- 2 immat -->
+        <int   n="3"  type="int">  0 </int>                                         <!-- 3 immat -->
+        <int   n="4"  type="int">  0 </int>                                         <!-- 4 immat -->
+        <int   n="5"  type="int">  0 </int>                                         <!-- 5 immat -->
+        <int   n="6"  type="bool"> 1 </int>                                         <!-- 6 -->
+        <int   n="7"  type="int">  0 </int>                                         <!-- 7  -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!-- 8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>         <!-- 9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/gear/gear[0]/wow/"/>
+        <float n="7"  alias="/gear/gear[1]/wow/"/>
+        <float n="8"  alias="/gear/gear[2]/wow/"/>
+        <float n="9"  alias="/gear/gear[3]/wow/"/>
+        <float n="10" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="11" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="12" alias="/gear/gear[2]/rollspeed-ms"/>
+        <float n="13" alias="/gear/gear[3]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+
+    <sound>
+        <path>Aircraft/Dash8Q200/Sounds/dash8-sound.xml</path>
+    </sound>
+
+    <flaps>
+        <setting>0.000</setting>
+        <setting>0.250</setting>
+        <setting>0.500</setting>
+        <setting>0.750</setting>
+        <setting>1.000</setting>
+    </flaps>
+
+    <virtual-cockpit>true</virtual-cockpit>
+    <allow-toggle-cockpit>true</allow-toggle-cockpit>
+
+    <help>
+        <title>Dash8Q200</title>
+<line>take off speed with flaps 15% = 87knts @ 30000lb</line>
+<line>landing speed with 15% flaps = 110knots @ 30000lb</line>	
+    </help>
+
+    <weight n="0">
+        <name>Crew</name>
+        <weight-lb>360</weight-lb>
+        <max-lb>400</max-lb>
+        <min-lb>180</min-lb>
+    </weight>
+
+    <weight n="1">
+        <name>Pax/Baggage</name>
+        <weight-lb>3000</weight-lb>
+        <max-lb>4000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <yokes-visible type="bool">1</yokes-visible>
+
+
+
+</sim>
+ <controls>
+    <assemblies>
+        <caution0-button type="double">0</caution0-button>
+        <flap-override-button type="double">0</flap-override-button>
+        <flap-override-guard type="double">1</flap-override-guard>
+        <inhibit-button type="double">0</inhibit-button>
+        <inhibit-guard type="double">1</inhibit-guard>
+        <steep-approach-button type="double">0</steep-approach-button>
+        <steep-approach-guard type="double">1</steep-approach-guard>
+        <terrain-inhibit-button type="double">0</terrain-inhibit-button>
+        <terrain-inhibit-guard type="double">1</terrain-inhibit-guard>
+        <warning0-button type="double">0</warning0-button>
+    </assemblies>
+    <electric>
+        <battery-switch type = "bool">0</battery-switch>
+        <avionics-switch type = "bool">0</avionics-switch>
+        <external-power type = "bool">0</external-power>
+        <RH-AC-bus type = "bool">0</RH-AC-bus>
+        <LH-AC-bus type = "bool">0</LH-AC-bus>
+        <engine n="0">
+            <generator>false</generator>
+        </engine>
+        <engine n="1">
+            <generator>false</generator>
+        </engine>
+        <wipers>
+            <arc-sec type="double" n="0">0</arc-sec>
+            <arc-sec type="double" n="1">1</arc-sec>
+            <arc-sec type="double" n="2">0.6</arc-sec>
+            <delay-sec type="double" n="0">0</delay-sec>
+            <delay-sec type="double" n="1">0</delay-sec>
+            <delay-sec type="double" n="2">0</delay-sec>
+            <switch type="int">0</switch>
+            <position-norm type="double">0</position-norm>
+        </wipers>
+        <efis>
+            <bank n="0" type="bool">0</bank>
+            <bank n="1" type="bool">0</bank>
+        </efis>
+    </electric>
+
+    <lighting>
+        <instruments-norm>0.8</instruments-norm>
+        <eng-norm type="double">0.8</eng-norm>
+        <landing-lights n="0" type="bool">0</landing-lights>
+        <landing-lights n="1" type="bool">0</landing-lights>
+        <recog-lights type="bool">0</recog-lights>
+        <ice-lights type="bool">0</ice-lights>
+        <taxi-lights type="bool">0</taxi-lights>
+        <master-panel type="bool">0</master-panel>
+    </lighting>
+
+    <gear>
+        <brake-parking>1</brake-parking>
+    </gear>
+
+    <engines>
+        <engine n="0">
+            <condition>0</condition>
+            <condition-input type="double">0</condition-input>
+            <propeller-pitch>0</propeller-pitch>
+            <mixture>0</mixture>
+        </engine>
+        <engine n="1">
+            <condition>0</condition>
+            <condition-input type="double">0</condition-input>
+            <propeller-pitch>0</propeller-pitch>
+            <mixture>0</mixture>
+        </engine>
+    </engines>
+
+    <fuel>
+    <gauge-switch type="string">main</gauge-switch>
+    <Laux-switch type="string">auto</Laux-switch>
+    <Raux-switch type="string">auto</Raux-switch>
+    <transfer type="string">off</transfer>
+    </fuel>
+
+  </controls>
+<consumables>
+    <fuel>
+        <gauge n="0" type="double">0</gauge>
+        <gauge n="1" type="double">0</gauge>
+        <tank n="0">
+            <name>L Main</name>
+        </tank>
+        <tank n="1">
+            <name>R Main</name>
+        </tank>
+        <tank n="2">
+            <name>L Aux</name>
+            <level-gal_us type="double">0</level-gal_us>
+        </tank>
+        <tank n="3">
+            <name>R Aux</name>
+            <level-gal_us type="double">0</level-gal_us>
+        </tank>
+    </fuel>
+</consumables>
+
+    <instrumentation>
+    <mk-viii>                          <!-- http://wiki.flightgear.org/index.php/GPWS -->
+      <serviceable>true</serviceable>  <!-- EGPWS_ENABLE -->
+      <configuration-module>
+       <category-1>   1 </category-1>  <!-- AIRCRAFT_MODE_TYPE_SELECT -->
+       <category-8>   3 </category-8>  <!-- RADIO_ALTITUDE_INPUT_SELECT -->
+      </configuration-module>
+      <inputs>                         <!-- Module I/O -->
+       <arinc429>
+        <decision-height-ncd> false </decision-height-ncd>
+        <decision-height>150</decision-height>
+       </arinc429>
+      </inputs>
+          <speaker>
+                <volume>1</volume>
+                <max-dist>2</max-dist>
+                <reference-dist>0.5</reference-dist>
+                <position>
+                    <x>-4.5</x>
+                    <y>0</y>
+                    <z>0.5</z>
+                </position>
+          </speaker>
+    </mk-viii>
+    <airspeed-indicator>
+        <index n="0" type="double">117</index>
+        <index n="1" type="double">130</index>
+        <ias-limit>248.0</ias-limit>
+        <mach-limit>0.48</mach-limit>
+        <alt-threshold>13200.0</alt-threshold>
+    </airspeed-indicator>
+    <inst-vertical-speed-indicator>
+        <serviceable type="bool">true</serviceable>
+    </inst-vertical-speed-indicator>
+    <adf>
+        <func-knob type="int">2</func-knob>
+        <volume-norm type="double">0.2</volume-norm>
+        <mode type="string">adf</mode>
+        <ident-audible type="bool">0</ident-audible>
+    </adf>
+    <comm n="0">
+        <func-knob type="int">1</func-knob>
+        <volume type="double">0.2</volume>
+    </comm>
+    <comm n="1">
+        <func-knob type="int">1</func-knob>
+        <volume type="double">0.2</volume>
+    </comm>
+    <nav n="0">
+        <func-knob type="int">1</func-knob>
+        <volume type="double">0.2</volume>
+    </nav>
+    <nav n="1">
+        <func-knob type="int">1</func-knob>
+        <volume type="double">0.2</volume>
+    </nav>
+    <rmi>
+        <unit n="0">
+            <btn n="0" type="bool">0</btn>
+            <btn n="1" type="bool">0</btn>
+        </unit>
+        <unit n="1">
+            <btn n="0" type="bool">0</btn>
+            <btn n="1" type="bool">0</btn>
+        </unit>
+    </rmi>
+    <alt-alerter>
+        <fl type="int">100</fl>
+        <alert type="bool">0</alert>
+        <enabled type="bool">1</enabled>
+    </alt-alerter>
+    <efis>
+        <unit n="0">
+            <nav-data type="string">GSP</nav-data>
+        </unit>
+        <unit n="1">
+            <nav-data type="string">GSP</nav-data>
+        </unit>
+    </efis>
+    </instrumentation>
+
+    <engines>
+        <engine n="0">
+            <running>0</running>
+            <rpm>0</rpm>
+            <n1 type="double">0</n1>
+            <fuel-flow_pph type="float">0</fuel-flow_pph>
+        </engine>
+        <engine n="1">
+            <running>0</running>
+            <rpm>0</rpm>
+            <n1 type="double">0</n1>
+            <fuel-flow_pph type="float">0</fuel-flow_pph>
+        </engine>
+    </engines>
+<consumables>
+    <fuel>
+        <tank n="0">
+            <name>Front Tank</name>
+        </tank>
+        <tank n="1">
+            <name>Rear Tank</name>
+        </tank>
+    </fuel>
+</consumables>
+
+    <environment>
+        <turbulence>
+        <use-cloud-turbulence>true</use-cloud-turbulence>
+        </turbulence>
+    </environment>
+<input>
+ <keyboard>
+  <key n="127">
+   <name>Delete</name>
+   <desc>Toggle Reversers</desc>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[0]/reverser</property>
+   </binding>
+   <binding>
+    <command>property-toggle</command>
+    <property>controls/engines/engine[1]/reverser</property>
+   </binding>
+  </key>
+ </keyboard>
+</input>
+    <!--<input>
+        <keyboard>
+            <key n="77">
+                <name>M</name>
+                <desc>condition lever leaner.</desc>
+                <repeatable type="bool">true</repeatable>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>controls/engines/engine[0]/condition-lever</property>
+                    <step>-0.01</step>
+                    <min>0</min>
+                    <max>1.0</max>
+                    <wrap>0</wrap>
+                </binding>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>controls/engines/engine[1]/condition-lever</property>
+                    <step>-0.01</step>
+                    <min>0</min>
+                    <max>1.0</max>
+                    <wrap>0</wrap>
+                </binding>
+            </key>
+           <key n="109">
+                <name>m</name>
+                <desc>condition lever richer</desc>
+                <repeatable type="bool">true</repeatable>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>controls/engines/engine[0]/condition-lever</property>
+                    <step>0.01</step>
+                    <min>0</min>
+                    <max>1.0</max>
+                    <wrap>0</wrap>
+                </binding>
+                <binding>
+                    <command>property-adjust</command>
+                    <property>controls/engines/engine[1]/condition-lever</property>
+                    <step>0.01</step>
+                    <min>0</min>
+                    <max>1.0</max>
+                    <wrap>0</wrap>
+                </binding>
+            </key>
+        </keyboard>
+    </input>-->
+
+</PropertyList>

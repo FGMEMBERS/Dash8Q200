@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+	<name>dash8-hireflectfuselage</name>
+	<inherits-from>/Effects/model-combined-deferred</inherits-from>
+	<parameters>
+		<!-- Reflection -->
+		<reflection-enabled type="int">1</reflection-enabled>
+		<reflection-correction type="float">0.1</reflection-correction>
+		<reflection-dynamic type="int">1</reflection-dynamic>
+   <ambient_correction>10</ambient_correction>
+	</parameters>
+</PropertyList>

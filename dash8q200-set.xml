@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!--
+************************************************************************
+de Havilland Dash8Q200Q
+June 2015 D-ECHO
+FDM based on Alex Park Dash 8 300Q adapted for the Dash8 - 200Q
+************************************************************************
+-->
+
+<PropertyList include="dash8q200-base.xml">
+    <sim>
+        <description>Dash8Q200</description>
+        <status>Testing</status>
+        <author>D-ECHO, based on dhc8-400 by Alex Park</author>
+        <flight-model>yasim</flight-model>
+        <aero>dash8q200</aero>
+        <fuel-fraction>0.5</fuel-fraction>
+        <startup>
+            <splash-texture>Aircraft/Dash8Q200/splash.png</splash-texture>
+        </startup>
+<status>beta</status>
+<rating>
+ <FDM type="int">3</FDM>
+ <systems type="int">1</systems>
+ <cockpit type="int">3</cockpit>
+ <model type="int">4</model>
+</rating>
+    <model>
+<path>Aircraft/Dash8Q200/Models/8q200.xml</path>
+</model>
+
+    <menubar>
+        <default>
+            <menu n="10">
+                <label>Dash8Q200</label>
+                <enabled type="bool">true</enabled>
+                <item>
+                    <label>Autostart</label>
+                    <binding>
+                        <command>property-toggle</command>
+                        <property>sim/model/start-idling</property>
+                    </binding>
+                </item>
+                   
+			<item>
+                    <label>Select Livery</label>
+                    <binding>
+                        <command>nasal</command>
+                        <script>aircraft.livery.dialog.toggle()</script>
+                    </binding>
+                </item>
+            </menu>
+        </default>
+    </menubar>
+
+</sim>
+
+
+<controls>
+        <gear>
+            <brake-parking>1</brake-parking>
+        </gear>
+</controls>
+
+<input>
+ <keyboard> 
+<key n="119"> 
+<name>w</name> 
+<desc>Walk forward toward view</desc>
+ <repeatable>true</repeatable>
+ <binding>
+ <command>nasal</command> 
+<script>walk.walk_about(0.1)</script> 
+</binding> 
+</key> 
+<key n="87"> 
+<name>W</name>
+ <desc>Walk backward from view</desc> 
+<repeatable>true</repeatable> 
+<binding>
+ <command>nasal</command>
+ <script>walk.walk_about(-0.1)</script> 
+</binding> 
+</key>
+ </keyboard>
+ </input> 
+
+
+   <nasal>
+<doors><file>Nasal/doors.nas</file></doors>
+        <dash8q200>
+            <file>Nasal/Electrical.nas</file>
+            <file>Nasal/systems.nas</file>
+            <file>Nasal/vhf22.nas</file>
+            <file>Nasal/vir32.nas</file>
+		<file>Nasal/reverse-thrust.nas</file>
+		<file>Nasal/walk.nas</file>
+		<file>Nasal/copilot-dual-control.nas</file>
+		<file>Nasal/Dash8Q200-dual-control.nas</file>
+		<file>Nasal/dual-control-tools.nas</file>
+		<file>Nasal/hydralic-pressure.nas</file>
+		<file>Nasal/lighting.nas</file>
+        </dash8q200>
+    </nasal>
+
+ 
+ 
+</PropertyList>
